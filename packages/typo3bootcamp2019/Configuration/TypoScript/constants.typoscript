@@ -1,0 +1,60 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:typo3bootcamp2019/Resources/Public/Images/logo.svg
+        fileInverted = EXT:typo3bootcamp2019/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = Typo3BootCamp2019
+        linktitle = Typo3BootCamp2019
+    }
+    favicon {
+        file = EXT:typo3bootcamp2019/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:typo3bootcamp2019/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:typo3bootcamp2019/Resources/Private/Partials/Page/
+        templateRootPath = EXT:typo3bootcamp2019/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:typo3bootcamp2019/Resources/Private/Layouts/
+        partialRootPath = EXT:typo3bootcamp2019/Resources/Private/Partials/
+        templateRootPath = EXT:typo3bootcamp2019/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:typo3bootcamp2019/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:typo3bootcamp2019/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:typo3bootcamp2019/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.bootstrap_package.settings.scss {
+    primary = #eb3e4a
+    secondary = #013859
+}

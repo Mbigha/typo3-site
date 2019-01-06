@@ -1,0 +1,50 @@
+{
+    "name": "hof-university/typo3bootcamp2019-project",
+    "description": "typo3 website for the Hof University boot camp event",
+    "type": "project",
+    "require": {
+        "typo3/minimal": "^9.5",
+        "cweagans/composer-patches": "^1.6",
+        "hof-university/typo3bootcamp2019": "^1.0",
+        "typo3/cms-adminpanel": "^9.5",
+        "typo3/cms-backend": "^9.5",
+        "typo3/cms-core": "^9.5",
+        "typo3/cms-extbase": "^9.5",
+        "typo3/cms-extensionmanager": "^9.5",
+        "typo3/cms-fluid": "^9.5",
+        "typo3/cms-fluid-styled-content": "^9.5",
+        "typo3/cms-form": "^9.5",
+        "typo3/cms-install": "^9.5",
+        "typo3/cms-recordlist": "^9.5",
+        "typo3/cms-recycler": "^9.5",
+        "typo3/cms-redirects": "^9.5",
+        "typo3/cms-reports": "^9.5",
+        "typo3/cms-setup": "^9.5",
+        "typo3/cms-t3editor": "^9.5",
+        "typo3/cms-tstemplate": "^9.5",
+        "typo3/cms-viewpage": "^9.5",
+        "symfony/dotenv": "^4.2",
+        "friendsoftypo3/extension-builder": "^9.10"
+    },
+    "extra": {
+		"patches": {
+			"bk2k/bootstrap-package": {
+				"Processes symlinked SCSS sources": "https://patch-diff.githubusercontent.com/raw/benjaminkott/bootstrap_package/pull/585.patch"
+			}
+		}
+	},
+	"repositories": [
+		{ "type": "path", "url": "packages/*" }
+	],
+
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Mbigha Sigala",
+            "email": "sigalambigha@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "helhum/typo3-console": "^5.6"
+    }
+}

@@ -1,0 +1,79 @@
+mod.web_layout.BackendLayouts {
+  bootcamp {
+    title = BootCamp Page Layout
+    icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 4
+        rowCount = 4
+        rows {
+          1 {
+            columns {
+              1 {
+                name = About Event
+                colspan = 2
+                colPos = 0
+              }
+              2 {
+                name = Where
+                colPos = 1
+              }
+              3 {
+                name = When
+                colPos = 2
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = GoogleMaps
+                colspan = 2
+                colPos = 3
+              }
+              2 {
+                name = Venue
+                colspan = 2
+                colPos = 4
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = Address
+                colspan = 2
+                colPos = 5
+              }
+              2 {
+                name = Phone
+                colPos = 6
+              }
+              3 {
+                name = Email
+                colPos = 7
+              }
+            }
+          }
+          4 {
+            columns {
+              1 {
+                name = Footer About
+                colPos = 8
+              }
+              2 {
+                name = Footer Links
+                colspan = 2
+                colPos = 9
+              }
+              3 {
+                name = Footer Contact
+                colPos = 10
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

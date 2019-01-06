@@ -1,0 +1,37 @@
+//
+// Variables
+//
+@import "variables";
+
+//
+// Import needed Bootstrap Package Files
+//
+@import "../../../../../bootstrap_package/Resources/Public/Scss/Theme/theme";
+
+.frame {
+	padding: 0;
+}
+
+#header {
+	height: 90px !important;
+}
+
+#header #logo img {
+	max-height: 60px !important;
+}
+
+#nav-menu-container {
+	margin-top: 15px !important;
+}
+
+#header.header-scrolled {
+	height: 90px !important;
+}
+
+#speakers-details .col-md-4 {
+	margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info img {
+	height: 80px !important;
+}

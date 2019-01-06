@@ -1,0 +1,54 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSSLibs {
+        googlefont = https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800
+        googlefont {
+	        external = 1
+	        disableCompression = 1
+	    }
+        bootstrap = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/bootstrap/css/bootstrap.min.css
+        fontawesome = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/font-awesome/css/font-awesome.min.css
+        animate = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/animate/animate.min.css
+        venobox = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/venobox/venobox.css
+        owlcarousel = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/owlcarousel/assets/owl.carousel.min.css
+    }
+    
+    includeCSS {
+        template_style = EXT:typo3bootcamp2019/Resources/Public/Scss/css/style.css
+        theme = EXT:typo3bootcamp2019/Resources/Public/Scss/Theme/theme.scss
+    }
+
+    includeJSLibs {
+		
+    }
+
+    includeJS {
+	
+    }
+
+    includeJSFooterlibs {
+		jquery = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/jquery/jquery.min.js
+		jquerymigrate = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/jquery/jquery-migrate.min.js
+		bootstrap = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/bootstrap/js/bootstrap.bundle.min.js
+		easing = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/easing/easing.min.js
+		superfishintent = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/superfish/hoverIntent.js
+		superfish = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/superfish/superfish.min.js
+		wow = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/wow/wow.min.js
+		venobox = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/venobox/venobox.min.js
+		owlcarousel = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/owlcarousel/owl.carousel.min.js
+		contactform = EXT:typo3bootcamp2019/Resources/Public/TheEvent/contactform/contactform.js
+    }
+
+    includeJSFooter {
+        typo3bootcamp2019_scripts = EXT:typo3bootcamp2019/Resources/Public/JavaScript/Dist/scripts.js
+        templatejs = EXT:typo3bootcamp2019/Resources/Public/JavaScript/js/main.js
+    }
+}

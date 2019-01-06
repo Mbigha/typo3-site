@@ -1,0 +1,18 @@
+{
+  "name": "hof-university-typo3bootcamp2019",
+  "description": "Typo3 Boot Camp 2019, an event hosted by Hof University.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HofUniversityBootcamp/bootcamp2019-project.git"
+  },
+  "homepage": "https://www.hof-university.com/",
+  "author": "HofUniversityBootcamp",
+  "version": "1.0.0",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-contrib-imagemin": "^2.0.1"
+  }
+}
