@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-11T23:13:04Z" product-name="bootcamp2">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="day_number.description">
+				<source>dayNumber</source>
+			</trans-unit>
+			<trans-unit id="timeslots.description">
+				<source>timeslots</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

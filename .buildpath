@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildpath>
-	<buildpathentry kind="src" path="packages/typo3bootcamp2019"/>
-	<buildpathentry kind="src" path="public"/>
-	<buildpathentry kind="src" path="var/cache/code/cache_core"/>
-	<buildpathentry kind="src" path="var/cache/code/fluid_template"/>
-	<buildpathentry kind="src" path="vendor"/>
+	<buildpathentry kind="src" path=""/>
 	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
 </buildpath>
