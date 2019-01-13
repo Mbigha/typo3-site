@@ -1,0 +1,41 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
+	<div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="{f:uri.image(src: settings.logo.file)}" alt="{settings.logo.linktitle}">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '1', colPos: '8'}" />
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+            	<f:for each="{menu}" as="item">
+            		<li>
+            			<i class="fa fa-angle-right"></i>
+            			<a href="#{item.data.subtitle}">{item.title}</a>
+            		</li>
+            	</f:for>
+         
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '1', colPos: '10'}" />
+
+            <!-- <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div> --> 
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+</html>

@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    601,
-                    26.615386962890625
+                    685,
+                    30.384620666503906
                 ]
             },
             "name": "New Model Object",
@@ -77,8 +77,8 @@
         {
             "config": {
                 "position": [
-                    171,
-                    42.615386962890625
+                    170,
+                    43.384620666503906
                 ]
             },
             "name": "New Model Object",
@@ -140,8 +140,8 @@
         {
             "config": {
                 "position": [
-                    585,
-                    268.61538696289062
+                    635,
+                    280.38462066650391
                 ]
             },
             "name": "New Model Object",
@@ -224,6 +224,17 @@
                             "propertyName": "end",
                             "propertyType": "NativeDateTime",
                             "uid": "1111450868216"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "timeSlot",
+                            "propertyType": "Integer",
+                            "uid": "134193893035"
                         }
                     ]
                 },
@@ -258,8 +269,8 @@
         {
             "config": {
                 "position": [
-                    271,
-                    514.61538696289062
+                    270,
+                    515.38462066650391
                 ]
             },
             "name": "New Model Object",
@@ -277,7 +288,7 @@
                     "addDeletedField": true,
                     "addHiddenField": true,
                     "addStarttimeEndtimeFields": true,
-                    "aggregateRoot": false,
+                    "aggregateRoot": true,
                     "categorizable": false,
                     "description": "A speaker in the event.",
                     "mapToTable": "",
@@ -386,8 +397,8 @@
         {
             "config": {
                 "position": [
-                    49,
-                    266.61538696289062
+                    48,
+                    267.38462066650391
                 ]
             },
             "name": "New Model Object",
@@ -405,7 +416,7 @@
                     "addDeletedField": true,
                     "addHiddenField": true,
                     "addStarttimeEndtimeFields": true,
-                    "aggregateRoot": false,
+                    "aggregateRoot": true,
                     "categorizable": false,
                     "description": "Location of a session of the event.",
                     "mapToTable": "",
@@ -463,39 +474,19 @@
         },
         "extensionKey": "hof_bootcamp",
         "name": "Hof Typo3 Bootcamp",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "hof_bootcamp",
+        "originalVendorName": "HofBootCamp",
         "persons": [],
         "plugins": [
             {
                 "actions": {
-                    "controllerActionCombinations": "Speaker => list",
+                    "controllerActionCombinations": "Speaker => list, show",
                     "noncacheableActions": "",
                     "switchableActions": ""
                 },
                 "description": "Displays a list of all the speakers created in the Typo3 backend",
                 "key": "speakerslist",
                 "name": "The Speakers List"
-            },
-            {
-                "actions": {
-                    "controllerActionCombinations": "Speaker => show",
-                    "noncacheableActions": "",
-                    "switchableActions": ""
-                },
-                "description": "Displays detail information of a speaker",
-                "key": "speakerdetail",
-                "name": "Speaker Detail"
-            },
-            {
-                "actions": {
-                    "controllerActionCombinations": "Day => list",
-                    "noncacheableActions": "",
-                    "switchableActions": ""
-                },
-                "description": "Displays the event schedule on the site's frontend",
-                "key": "schedulelist",
-                "name": "The Event Schedule List"
             },
             {
                 "actions": {
@@ -506,6 +497,16 @@
                 "description": "Displays the details of a session",
                 "key": "sessiondetail",
                 "name": "Session Detail"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "Day => list",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "description": "Displays the event schedule on the site's frontend",
+                "key": "schedulelist",
+                "name": "The Event Schedule List"
             }
         ],
         "vendorName": "HofBootCamp"
@@ -561,7 +562,7 @@
         }
     ],
     "log": {
-        "last_modified": "2019-01-12 04:45",
+        "last_modified": "2019-01-12 08:11",
         "extension_builder_version": "9.10.0",
         "be_user": " (1)"
     }

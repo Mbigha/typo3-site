@@ -16,8 +16,8 @@ class ComposerStaticInitcfe57da80ab84a83c7f24b9a999ec8b3
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '8a197a13b1f213f3a2178168511a1b5d' => __DIR__ . '/../..' . '/public/typo3/sysext/core/Resources/PHP/GlobalDebugFunctions.php',
-        'a0ac6e86548abb1d1893007ab9530724' => __DIR__ . '/..' . '/helhum/console-autoload-include.php',
-        '96e741e864d8244de5e1f0bdd243098d' => __DIR__ . '/..' . '/typo3/autoload-include.php',
+        '192c61659e74ef370ef06d78d46cb8ca' => __DIR__ . '/..' . '/helhum/console-autoload-include.php',
+        'c457dd7dcb217ee5fa8241ebb673aaa2' => __DIR__ . '/..' . '/typo3/autoload-include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -86,6 +86,7 @@ class ComposerStaticInitcfe57da80ab84a83c7f24b9a999ec8b3
         'H' => 
         array (
             'HofUniversity\\Typo3bootcamp2019\\' => 32,
+            'HofBootCamp\\HofBootcamp\\' => 24,
             'Helhum\\Typo3Console\\' => 20,
             'Helhum\\Typo3ConsolePlugin\\' => 26,
             'Helhum\\ConfigLoader\\' => 20,
@@ -307,6 +308,10 @@ class ComposerStaticInitcfe57da80ab84a83c7f24b9a999ec8b3
         'HofUniversity\\Typo3bootcamp2019\\' => 
         array (
             0 => __DIR__ . '/../..' . '/public/typo3conf/ext/typo3bootcamp2019/Classes',
+        ),
+        'HofBootCamp\\HofBootcamp\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/public/typo3conf/ext/hof_bootcamp/Classes',
         ),
         'Helhum\\Typo3Console\\' => 
         array (

@@ -25,6 +25,15 @@ class SessionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      * @inject
      */
     protected $sessionRepository = null;
+    
+    /**
+     * timeSlotRepository
+     *
+     * @var \HofBootCamp\HofBootcamp\Domain\Repository\TimeSlotRepository
+     * @inject
+     */
+    protected $timeSlotRepository;
+    
 
     /**
      * action list
@@ -44,7 +53,7 @@ class SessionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      * @return void
      */
     public function showAction(\HofBootCamp\HofBootcamp\Domain\Model\Session $session)
-    {
+    {        
         $this->view->assign('session', $session);
     }
 }

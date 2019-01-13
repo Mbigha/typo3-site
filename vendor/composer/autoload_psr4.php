@@ -54,6 +54,7 @@ return array(
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Mso\\IdnaConvert\\' => array($vendorDir . '/mso/idna-convert/src'),
     'HofUniversity\\Typo3bootcamp2019\\' => array($baseDir . '/public/typo3conf/ext/typo3bootcamp2019/Classes'),
+    'HofBootCamp\\HofBootcamp\\' => array($baseDir . '/public/typo3conf/ext/hof_bootcamp/Classes'),
     'Helhum\\Typo3Console\\' => array($vendorDir . '/helhum/typo3-console/Classes/Console', $vendorDir . '/helhum/typo3-console/Classes/Compatibility'),
     'Helhum\\Typo3ConsolePlugin\\' => array($vendorDir . '/helhum/typo3-console-plugin/src'),
     'Helhum\\ConfigLoader\\' => array($vendorDir . '/helhum/config-loader/src'),

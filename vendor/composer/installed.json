@@ -1456,6 +1456,37 @@
         ]
     },
     {
+        "name": "hofbootcamp/hof-bootcamp",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "dist": {
+            "type": "path",
+            "url": "packages/hof_bootcamp",
+            "reference": "6d3323d19cc184fcac93b8473a94754570617ff5",
+            "shasum": null
+        },
+        "require": {
+            "typo3/cms-core": "^9.5"
+        },
+        "replace": {
+            "hof_bootcamp": "self.version",
+            "typo3-ter/hof-bootcamp": "self.version"
+        },
+        "type": "typo3-cms-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "HofBootCamp\\HofBootcamp\\": "Classes"
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "HofBootCamp\\HofBootcamp\\Tests\\": "Tests"
+            }
+        },
+        "description": "The extension to handle contents of the Bootcamp website"
+    },
+    {
         "name": "mso/idna-convert",
         "version": "v1.1.0",
         "version_normalized": "1.1.0.0",

@@ -27,6 +27,14 @@ class DayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     protected $dayRepository = null;
 
     /**
+     * locationRepository
+     * 
+     * @var \HofBootCamp\HofBootcamp\Domain\Repository\LocationRepository
+     * @inject
+     */
+    protected $locationRepository = null;
+
+    /**
      * action list
      * 
      * @return void
@@ -34,6 +42,8 @@ class DayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     public function listAction()
     {
         $days = $this->dayRepository->findAll();
+        $locations = $this->locationRepository->findAll();
         $this->view->assign('days', $days);
+        $this->view->assign('locations', $locations);
     }
 }

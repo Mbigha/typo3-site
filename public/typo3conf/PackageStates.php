@@ -74,6 +74,9 @@ return [
         'extension_builder' => [
             'packagePath' => 'typo3conf/ext/extension_builder/',
         ],
+        'hof_bootcamp' => [
+            'packagePath' => 'typo3conf/ext/hof_bootcamp/',
+        ],
     ],
     'version' => 5,
 ];

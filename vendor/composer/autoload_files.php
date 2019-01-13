@@ -15,6 +15,6 @@ return array(
     '37a3dc5111fe8f707ab4c132ef1dbc62' => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
     '2c102faa651ef8ea5874edb585946bce' => $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
     '8a197a13b1f213f3a2178168511a1b5d' => $baseDir . '/public/typo3/sysext/core/Resources/PHP/GlobalDebugFunctions.php',
-    'a0ac6e86548abb1d1893007ab9530724' => $vendorDir . '/helhum/console-autoload-include.php',
-    '96e741e864d8244de5e1f0bdd243098d' => $vendorDir . '/typo3/autoload-include.php',
+    '192c61659e74ef370ef06d78d46cb8ca' => $vendorDir . '/helhum/console-autoload-include.php',
+    'c457dd7dcb217ee5fa8241ebb673aaa2' => $vendorDir . '/typo3/autoload-include.php',
 );

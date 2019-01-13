@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<header id="header" class="{f:if(condition: '{data.uid} == 17 || {data.uid} == 18', then: 'header-fixed', else: '')}">
+    <div class="container">
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <f:link.page pageUid="{rootPage}" class="scrollto" title="{settings.logo.linktitle}">
+        	<img src="{f:uri.image(src: settings.logo.file)}" alt="{logoAlt}">
+        </f:link.page>
+      </div>
+
+      <nav id="nav-menu-container">
+      	<f:render section="MainNavigation" arguments="{menu: mainnavigation, theme: theme}" />
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<f:section name="MainNavigation">
+    <f:if condition="{menu}">
+    	<ul class="nav-menu">
+    	 	<f:for each="{menu}" as="item">
+          		<li class="{f:if(condition: '{item.data.uid == 6)}', then: 'menu-active', else: '')}"><a href="/#{item.data.subtitle}">{item.title}</a></li>
+          		<!-- <li class="buy-tickets"><a href="#buy-tickets">Buy Tickets</a></li> -->
+          	</f:for>
+        </ul>
+    </f:if>
+</f:section>
+</html>

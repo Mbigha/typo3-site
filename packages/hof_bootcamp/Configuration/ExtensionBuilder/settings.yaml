@@ -47,13 +47,15 @@ overwriteSettings:
       Repository: merge
 
   Configuration:
-    #TCA merge not possible - use overrides directory
-    #TypoScript: keep
+    TCA merge not possible - use overrides directory
+    TypoScript: keep
 
   Resources:
     Private:
       #Language: merge
       Templates: keep
+      Partials: keep
+      Layouts: keep
 
   user_extension.svg: keep
 

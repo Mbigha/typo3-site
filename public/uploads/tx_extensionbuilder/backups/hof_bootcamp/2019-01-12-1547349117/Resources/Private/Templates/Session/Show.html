@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	<f:section name="content">
+	<f:debug>{_all}</f:debug>
+		<div class="row">
+			<f:for each="{session.speakers}" as="speaker">
+	          <div class="col-md-4">
+	            <f:image image="{speaker.image}" class="img-fluid" />
+	          </div>
+	        </f:for>
+	
+	          <div class="col-md-8">
+	            <div class="details">
+	              <h2>{session.title}</h2>
+	              <h5><strong>Day 1, 14:20 — 15:05, Room: {session.location.room}</strong></h5>
+	              <h5><strong>Speakers:</strong></h5>
+	              <ul>
+	              	<f:for each="{session.speakers}" as="speaker">
+	              		<li> 
+		              		<f:link.action pageUid="17" controller="Speaker" action="show" arguments="{speaker : speaker}">
+							    {speaker.firstName} {speaker.lastName}
+							</f:link.action>
+						</li>
+	              	</f:for>
+	              </ul>
+	              <f:format.html>{session.description}</f:format.html>
+	            </div>
+	          </div>
+	          
+	     </div>
+	</f:section>
+</html>

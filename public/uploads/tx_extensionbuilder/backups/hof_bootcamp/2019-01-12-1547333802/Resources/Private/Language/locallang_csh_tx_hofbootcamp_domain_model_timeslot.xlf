@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-12T15:49:07Z" product-name="hof_bootcamp">
+		<header/>
+		<body>
+			<trans-unit id="time_range.description">
+				<source>timeRange</source>
+			</trans-unit>
+			<trans-unit id="sessions.description">
+				<source>A time slot can have many sessions, but a session can be assigned to only one time slot</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

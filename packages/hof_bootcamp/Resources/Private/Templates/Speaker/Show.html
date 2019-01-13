@@ -1,23 +1,38 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 	<f:layout name="Default" />
 
-	This Template is responsible for displaying a single view for a domain object
-
-	If you modify this template, do not forget to change the overwrite settings
-	in /Configuration/ExtensionBuilder/settings.yaml:
-	  Resources:
-		Private:
-		  Templates:
-			Show.html: keep
-
-	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
-
 	<f:section name="content">
-		<h1>Single View for Speaker</h1>
-
-		<f:flashMessages />
-		<f:render partial="Speaker/Properties" arguments="{speaker:speaker}" />
-		<f:link.action action="list">Back to list</f:link.action><br />
-		<f:link.action action="new">New Speaker</f:link.action>
+		 <div class="row">
+	          <div class="col-md-4">
+	            <f:image image="{speaker.image}" class="img-fluid" />
+	          </div>
+	
+	          <div class="col-md-8">
+	            <div class="details">
+	              <h2>{speaker.firstName} {speaker.lastName}</h2>
+	              <h5><i>{speaker.organisation}</i></h5>
+	              <div class="social">
+	                <f:link.external uri="{speaker.url}" target="_blank">
+	                	<i class="fa fa-external-link"></i>
+	                </f:link.external>
+	              </div>
+	              <div>
+	              	<f:format.html>{speaker.description}</f:format.html>
+	              </div>
+	              
+	              <h2 class="sessions">Sessions</h2>
+	              <ul>
+	              	<f:for each="{sessions}" as="session">
+	              		<li>
+	              			<f:link.action pageUid="18" controller="Session" action="show" arguments="{session : session}">
+				            	{session.title}
+				            </f:link.action>
+	              		</li>
+	              	</f:for>
+	              </ul>
+	            </div>
+	          </div>
+	          
+	        </div>
 	</f:section>
 </html>

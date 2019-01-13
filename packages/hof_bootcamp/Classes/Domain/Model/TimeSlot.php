@@ -24,6 +24,13 @@ class TimeSlot extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $timeRange = '';
+    
+    /**
+     * day
+     *
+     * @var \HofBootCamp\HofBootcamp\Domain\Model\Day
+     */
+    protected $day;
 
     /**
      * A time slot can have many sessions, but a session can be assigned to only one

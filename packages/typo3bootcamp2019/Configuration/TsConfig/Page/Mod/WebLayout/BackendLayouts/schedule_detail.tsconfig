@@ -10,7 +10,8 @@ mod.web_layout.BackendLayouts {
           1 {
             columns {
               1 {
-                name = 0x0
+                name = Session Detail
+                colPos = 1
               }
             }
           }

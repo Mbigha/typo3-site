@@ -20,10 +20,10 @@ return [
         'iconfile' => 'EXT:hof_bootcamp/Resources/Public/Icons/tx_hofbootcamp_domain_model_session.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, max_participants, start, end, location, speakers',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, max_participants, start, end, time_slot, location, speakers',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, max_participants, start, end, location, speakers, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, max_participants, start, end, time_slot, location, speakers, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -175,6 +175,15 @@ return [
                 'eval' => 'datetime',
                 'default' => null,
             ],
+        ],
+        'time_slot' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:hof_bootcamp/Resources/Private/Language/locallang_db.xlf:tx_hofbootcamp_domain_model_session.time_slot',
+            'config' => [
+                'type' => 'input',
+                'size' => 4,
+                'eval' => 'int'
+            ]
         ],
         'location' => [
             'exclude' => true,

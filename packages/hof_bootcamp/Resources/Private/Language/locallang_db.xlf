@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-12T04:45:19Z" product-name="hof_bootcamp">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-12T20:11:57Z" product-name="hof_bootcamp">
 		<header/>
 		<body>
 			<trans-unit id="tx_hofbootcamp_domain_model_day">
@@ -41,6 +41,9 @@
 			</trans-unit>
 			<trans-unit id="tx_hofbootcamp_domain_model_session.end">
 				<source>End</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session.time_slot">
+				<source>Time Slot</source>
 			</trans-unit>
 			<trans-unit id="tx_hofbootcamp_domain_model_session.location">
 				<source>Location</source>
@@ -90,23 +93,17 @@
 			<trans-unit id="tx_hof_bootcamp_speakerslist.description">
 				<source>Displays a list of all the speakers created in the Typo3 backend</source>
 			</trans-unit>
-			<trans-unit id="tx_hof_bootcamp_speakerdetail.name">
-				<source>Speaker Detail</source>
+			<trans-unit id="tx_hof_bootcamp_sessiondetail.name">
+				<source>Session Detail</source>
 			</trans-unit>
-			<trans-unit id="tx_hof_bootcamp_speakerdetail.description">
-				<source>Displays detail information of a speaker</source>
+			<trans-unit id="tx_hof_bootcamp_sessiondetail.description">
+				<source>Displays the details of a session</source>
 			</trans-unit>
 			<trans-unit id="tx_hof_bootcamp_schedulelist.name">
 				<source>The Event Schedule List</source>
 			</trans-unit>
 			<trans-unit id="tx_hof_bootcamp_schedulelist.description">
 				<source>Displays the event schedule on the site&#039;s frontend</source>
-			</trans-unit>
-			<trans-unit id="tx_hof_bootcamp_sessiondetail.name">
-				<source>Session Detail</source>
-			</trans-unit>
-			<trans-unit id="tx_hof_bootcamp_sessiondetail.description">
-				<source>Displays the details of a session</source>
 			</trans-unit>
 		</body>
 	</file>

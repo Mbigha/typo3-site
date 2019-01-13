@@ -33,6 +33,7 @@ CREATE TABLE tx_hofbootcamp_domain_model_session (
 	max_participants int(11) DEFAULT '0' NOT NULL,
 	start datetime DEFAULT NULL,
 	end datetime DEFAULT NULL,
+	time_slot int(11) DEFAULT '0' NOT NULL,
 	location int(11) unsigned DEFAULT '0',
 	speakers int(11) unsigned DEFAULT '0' NOT NULL,
 

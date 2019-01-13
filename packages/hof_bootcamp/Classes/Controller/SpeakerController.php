@@ -19,6 +19,22 @@ class SpeakerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 {
 
     /**
+     * speakerRepository
+     * 
+     * @var \HofBootCamp\HofBootcamp\Domain\Repository\SpeakerRepository
+     * @inject
+     */
+    protected $speakerRepository = null;
+    
+    /**
+     * sessionRepository
+     *
+     * @var \HofBootCamp\HofBootcamp\Domain\Repository\SessionRepository
+     * @inject
+     */
+    protected $sessionRepository;
+
+    /**
      * action list
      * 
      * @return void
@@ -37,6 +53,9 @@ class SpeakerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      */
     public function showAction(\HofBootCamp\HofBootcamp\Domain\Model\Speaker $speaker)
     {
+        $sessions = $this->sessionRepository->getSpeakerSessions( $speaker );
+        
         $this->view->assign('speaker', $speaker);
+        $this->view->assign('sessions', $sessions);
     }
 }

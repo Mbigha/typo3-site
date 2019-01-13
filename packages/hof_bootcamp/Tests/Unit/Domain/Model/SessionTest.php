@@ -152,6 +152,31 @@ class SessionTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
     /**
      * @test
      */
+    public function getTimeSlotReturnsInitialValueForInt()
+    {
+        self::assertSame(
+            0,
+            $this->subject->getTimeSlot()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function setTimeSlotForIntSetsTimeSlot()
+    {
+        $this->subject->setTimeSlot(12);
+
+        self::assertAttributeEquals(
+            12,
+            'timeSlot',
+            $this->subject
+        );
+    }
+
+    /**
+     * @test
+     */
     public function getLocationReturnsInitialValueForLocation()
     {
         self::assertEquals(

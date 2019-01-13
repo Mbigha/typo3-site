@@ -24,7 +24,8 @@
         "typo3/cms-tstemplate": "^9.5",
         "typo3/cms-viewpage": "^9.5",
         "symfony/dotenv": "^4.2",
-        "friendsoftypo3/extension-builder": "^9.10"
+        "friendsoftypo3/extension-builder": "^9.10",
+        "hofbootcamp/hof-bootcamp": "^1.0"
     },
     "extra": {
 		"patches": {

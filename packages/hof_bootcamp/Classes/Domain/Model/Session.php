@@ -59,6 +59,13 @@ class Session extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var \HofBootCamp\HofBootcamp\Domain\Model\Location
      */
     protected $location = null;
+    
+    /**
+     * timeslot
+     *
+     * @var \HofBootCamp\HofBootcamp\Domain\Model\TimeSlot
+     */
+    protected $timeslot = null;
 
     /**
      * A Session can have many speakers and a speaker can speak in one or many sessions
@@ -66,6 +73,7 @@ class Session extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\HofBootCamp\HofBootcamp\Domain\Model\Speaker>
      */
     protected $speakers = null;
+
 
     /**
      * __construct
@@ -257,5 +265,26 @@ class Session extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setSpeakers(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $speakers)
     {
         $this->speakers = $speakers;
+    }
+
+    /**
+     * Returns the timeSlot
+     * 
+     * @return int $timeSlot
+     */
+    public function getTimeSlot()
+    {
+        return $this->timeSlot;
+    }
+
+    /**
+     * Sets the timeSlot
+     * 
+     * @param int $timeSlot
+     * @return void
+     */
+    public function setTimeSlot($timeSlot)
+    {
+        $this->timeSlot = $timeSlot;
     }
 }

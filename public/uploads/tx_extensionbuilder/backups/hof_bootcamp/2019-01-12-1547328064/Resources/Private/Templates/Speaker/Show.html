@@ -1,0 +1,38 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="SpeakerDetail" />
+	
+	<f:section name="Main">
+		<!--==========================
+	      Speaker Details Section
+	    ============================-->
+	    <section id="speakers-details" class="wow fadeIn">
+	      <div class="container">
+	        <div class="section-header">
+	          <h2>Speaker Detail</h2>
+	        </div>
+	
+	        <div class="row">
+	          <div class="col-md-4">
+	          	<f:image image="{speaker.image}" class="img-fluid" />
+	          </div>
+	
+	          <div class="col-md-8">
+	            <div class="details">
+	              <h2>{speaker.firstName} {speaker.lastName}</h2>
+	              <div class="social">
+	                <f:link.external target="_blank" uri="{speaker.url}">
+	                	<i class="fa fa-external-link"></i>
+	                </f:link.external>
+	              </div>
+	              <div>
+	              	{speaker.description}
+	              </div>
+	            </div>
+	          </div>
+	          
+	        </div>
+	      </div>
+	
+	    </section>
+	</f:section>
+</html>

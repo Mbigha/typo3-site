@@ -1,0 +1,35 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	<f:section name="content">
+		<section id="speakers" class="wow fadeInUp">
+	      <div class="container">
+	        <div class="section-header">
+	          <h2>Event Speakers</h2>
+	          <p>Here are some of our speakers</p>
+	        </div>
+	
+	        <div class="row">
+	        	<f:for each="{speakers}" as="speaker">
+		          <div class="col-lg-4 col-md-6">
+		            <div class="speaker">
+		              <f:image image="{speaker.image}" class="img-fluid" height="480" />
+		              <div class="details">
+		                <h3>
+		                	<f:link.action action="show" arguments="{speaker : speaker}">
+		                		{speaker.firstName} {speaker.lastName}
+		                	</f:link.action>
+		                </h3>
+		                <p>{speaker.organisation}</p>
+		                
+		              </div>
+		            </div>
+		          </div>
+		         </f:for>
+	        </div>
+	      </div>
+	    </section>
+	    
+		<f:flashMessages />
+	</f:section>
+</html>

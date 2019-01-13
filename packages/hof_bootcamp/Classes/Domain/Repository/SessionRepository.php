@@ -17,4 +17,9 @@ namespace HofBootCamp\HofBootcamp\Domain\Repository;
  */
 class SessionRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
+    public function getSpeakerSessions(\HofBootCamp\HofBootcamp\Domain\Model\Speaker $speaker) {
+        $query = $this->createQuery();
+        $query->matching( $query->contains('speakers', $speaker) );
+        return $query->execute();
+    }
 }
