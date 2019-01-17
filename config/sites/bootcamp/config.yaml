@@ -1,5 +1,5 @@
 rootPageId: 1
-base: getenv('SITE_MAIN_BASE')
+base: /
 baseVariants: {  }
 languages:
   -

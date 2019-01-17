@@ -61,11 +61,11 @@ class Session extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $location = null;
     
     /**
-     * timeslot
+     * timeSlot
      *
      * @var \HofBootCamp\HofBootcamp\Domain\Model\TimeSlot
      */
-    protected $timeslot = null;
+    protected $timeSlot = null;
 
     /**
      * A Session can have many speakers and a speaker can speak in one or many sessions

@@ -180,9 +180,7 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:hof_bootcamp/Resources/Private/Language/locallang_db.xlf:tx_hofbootcamp_domain_model_session.time_slot',
             'config' => [
-                'type' => 'input',
-                'size' => 4,
-                'eval' => 'int'
+                'type' => 'passthrough',
             ]
         ],
         'location' => [
