@@ -7,4 +7,5 @@
 /public/typo3temp/
 /var/
 /.idea/
-/.settings/
+/.local/
+.env

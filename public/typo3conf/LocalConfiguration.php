@@ -3,7 +3,7 @@ return [
     'BE' => [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '!!!DOTENV!!!',
+        'installToolPassword' => getenv('TYPO3_INSTALL_TOOL_PASSWORD'),
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -83,12 +83,12 @@ return [
     'SYS' => [
         'devIPmask' => '*',
         'displayErrors' => 1,
-        'encryptionKey' => '2ae6d72f9e1e0ef58a2670e6ac51be71bbcc023a0fcb5e69304ca0e5b0e99e50dbecd2a89039b53ca823c264d629b42d',
+        'encryptionKey' => getenv('TYPO3_ENCRYPTION_KEY'),
         'exceptionalErrors' => 12290,
         'features' => [
             'unifiedPageTranslationHandling' => true,
         ],
-        'sitename' => 'Typo3 Hof BootCamp',
+        'sitename' => getenv('SITE_NAME'),
         'systemLogLevel' => 0,
         'systemMaintainers' => [
             1,

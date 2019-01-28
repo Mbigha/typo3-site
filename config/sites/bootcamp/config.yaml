@@ -1,5 +1,5 @@
 rootPageId: 1
-base: /
+base: '%env(SITE_MAIN_BASE)%'
 baseVariants: {  }
 languages:
   -
