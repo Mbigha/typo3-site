@@ -64,13 +64,13 @@ return [
         ],
     ],
     'GFX' => [
-        'processor' => 'ImageMagick',
+        'processor' => getenv('TYPO3_GFX_PROCESSOR'),
         'processor_allowTemporaryMasksAsPng' => false,
         'processor_colorspace' => 'sRGB',
         'processor_effects' => true,
         'processor_enabled' => true,
-        'processor_path' => '/usr/bin/',
-        'processor_path_lzw' => '/usr/bin/',
+        'processor_path' => getenv('TYPO3_GFX_PROCESSOR_PATH'),
+        'processor_path_lzw' => getenv('TYPO3_GFX_PROCESSOR_PATH_LZW'),
     ],
     'MAIL' => [
         'transport' => 'sendmail',
