@@ -1,0 +1,20 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          10: EXT:typo3bootcamp2019/Resources/Private/Forms/
+
+      prototypes:
+        customcontactform:
+          __inheritances:
+            10: 'TYPO3.CMS.Form.prototypes.standard'
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  100: 'EXT:typo3bootcamp2019/Resources/Private/Templates/Form/'
+                partialRootPaths:
+                  100: 'EXT:typo3bootcamp2019/Resources/Private/Partials/Form/'
+                layoutRootPaths:
+                  100: 'EXT:typo3bootcamp2019/Resources/Private/Layouts/Form/'

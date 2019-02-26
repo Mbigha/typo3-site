@@ -4,8 +4,8 @@ mod.web_layout.BackendLayouts {
     icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
     config {
       backend_layout {
-        colCount = 4
-        rowCount = 4
+        colCount = 3
+        rowCount = 5
         rows {
           1 {
             columns {
@@ -45,6 +45,15 @@ mod.web_layout.BackendLayouts {
           4 {
             columns {
               1 {
+                name = Contact Form
+                colspan = 4
+                colPos = 13
+              }
+            }
+          }
+          5 {
+            columns {
+              1 {
                 name = GoogleMaps
                 colspan = 2
                 colPos = 3
@@ -56,7 +65,7 @@ mod.web_layout.BackendLayouts {
               }
             }
           }
-          5 {
+          6 {
             columns {
               1 {
                 name = Address
@@ -73,7 +82,7 @@ mod.web_layout.BackendLayouts {
               }
             }
           }
-          6 {
+          7 {
             columns {
               1 {
                 name = Footer About

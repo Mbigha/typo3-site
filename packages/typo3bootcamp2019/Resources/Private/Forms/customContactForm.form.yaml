@@ -1,0 +1,63 @@
+
+renderingOptions:
+  submitButtonLabel: 'Send Message'
+type: Form
+identifier: customContactForm
+label: 'Custom Contact Form'
+prototypeName: customcontactform
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: Step
+    renderables:
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Row'
+        properties:
+          elementClassAttribute: form-row
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: name
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: 'Your Name'
+                data-rule: 'minlen:4'
+                data-msg: 'Please enter at least 4 chars'
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: email
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: 'Your Email'
+                data-rule: 'email'
+                data-msg: 'Please enter a valid email'
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-3
+        label: subject
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Subject
+            data-rule: 'minlen:4'
+            data-msg: 'Please enter at least 4 chars'
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: message
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Message
+            data-rule: 'required'
+            data-msg: 'Please write something for us'

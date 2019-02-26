@@ -19,18 +19,18 @@ class TimeSlot extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
 
     /**
+     * day
+     * 
+     * @var \HofBootCamp\HofBootcamp\Domain\Model\Day
+     */
+    protected $day = null;
+
+    /**
      * timeRange
      * 
      * @var string
      */
     protected $timeRange = '';
-    
-    /**
-     * day
-     *
-     * @var \HofBootCamp\HofBootcamp\Domain\Model\Day
-     */
-    protected $day;
 
     /**
      * A time slot can have many sessions, but a session can be assigned to only one
@@ -62,6 +62,16 @@ class TimeSlot extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected function initStorageObjects()
     {
         $this->sessions = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+    }
+    
+    /**
+     * Returns the day object for a time slot
+     *
+     * @return \HofBootCamp\HofBootcamp\Domain\Model\Day $day
+     */
+    public function getDay()
+    {
+        return $this->day;
     }
 
     /**

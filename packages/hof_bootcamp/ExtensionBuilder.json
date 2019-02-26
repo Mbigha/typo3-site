@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    685,
-                    30.384620666503906
+                    683,
+                    31.923080444335938
                 ]
             },
             "name": "New Model Object",
@@ -77,8 +77,8 @@
         {
             "config": {
                 "position": [
-                    170,
-                    43.384620666503906
+                    168,
+                    44.923080444335938
                 ]
             },
             "name": "New Model Object",
@@ -141,7 +141,7 @@
             "config": {
                 "position": [
                     635,
-                    280.38462066650391
+                    281.92308044433594
                 ]
             },
             "name": "New Model Object",
@@ -224,17 +224,6 @@
                             "propertyName": "end",
                             "propertyType": "NativeDateTime",
                             "uid": "1111450868216"
-                        },
-                        {
-                            "allowedFileTypes": "",
-                            "maxItems": "1",
-                            "propertyDescription": "",
-                            "propertyIsExcludeField": true,
-                            "propertyIsL10nModeExclude": false,
-                            "propertyIsRequired": false,
-                            "propertyName": "timeSlot",
-                            "propertyType": "Integer",
-                            "uid": "134193893035"
                         }
                     ]
                 },
@@ -270,7 +259,7 @@
             "config": {
                 "position": [
                     270,
-                    515.38462066650391
+                    516.92308044433594
                 ]
             },
             "name": "New Model Object",
@@ -397,8 +386,8 @@
         {
             "config": {
                 "position": [
-                    48,
-                    267.38462066650391
+                    46,
+                    268.92308044433594
                 ]
             },
             "name": "New Model Object",
@@ -562,7 +551,7 @@
         }
     ],
     "log": {
-        "last_modified": "2019-01-12 08:11",
+        "last_modified": "2019-02-15 02:55",
         "extension_builder_version": "9.10.0",
         "be_user": " (1)"
     }

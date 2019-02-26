@@ -53,6 +53,14 @@ call_user_func(
             ]
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'HofBootCamp.HofBootcamp',
+            'SendMailByAjax',
+            [
+                'SendMail' => 'send',
+            ]
+        );
+
     // wizards
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
         'mod {

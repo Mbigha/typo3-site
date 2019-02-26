@@ -31,6 +31,13 @@ class Session extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $description = '';
+    
+    /**
+     * timeslot
+     *
+     * @var \HofBootCamp\HofBootcamp\Domain\Model\TimeSlot
+     */
+    protected $timeslot = null;
 
     /**
      * maxParticipants
@@ -59,13 +66,6 @@ class Session extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var \HofBootCamp\HofBootcamp\Domain\Model\Location
      */
     protected $location = null;
-    
-    /**
-     * timeSlot
-     *
-     * @var \HofBootCamp\HofBootcamp\Domain\Model\TimeSlot
-     */
-    protected $timeSlot = null;
 
     /**
      * A Session can have many speakers and a speaker can speak in one or many sessions
@@ -73,7 +73,6 @@ class Session extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\HofBootCamp\HofBootcamp\Domain\Model\Speaker>
      */
     protected $speakers = null;
-
 
     /**
      * __construct
@@ -96,6 +95,16 @@ class Session extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected function initStorageObjects()
     {
         $this->speakers = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+    }
+    
+    /**
+     * Returns the time slot of the session
+     *
+     * @return \HofBootCamp\HofBootcamp\Domain\Model\TimeSlot $timeslot
+     */
+    public function getTimeslot()
+    {
+        return $this->timeslot;
     }
 
     /**
@@ -265,26 +274,5 @@ class Session extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setSpeakers(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $speakers)
     {
         $this->speakers = $speakers;
-    }
-
-    /**
-     * Returns the timeSlot
-     * 
-     * @return int $timeSlot
-     */
-    public function getTimeSlot()
-    {
-        return $this->timeSlot;
-    }
-
-    /**
-     * Sets the timeSlot
-     * 
-     * @param int $timeSlot
-     * @return void
-     */
-    public function setTimeSlot($timeSlot)
-    {
-        $this->timeSlot = $timeSlot;
     }
 }

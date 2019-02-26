@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-12T20:11:57Z" product-name="hof_bootcamp">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-02-15T02:55:53Z" product-name="hof_bootcamp">
 		<header/>
 		<body>
 			<trans-unit id="title.description">
@@ -17,9 +17,6 @@
 			</trans-unit>
 			<trans-unit id="end.description">
 				<source>end</source>
-			</trans-unit>
-			<trans-unit id="time_slot.description">
-				<source>timeSlot</source>
 			</trans-unit>
 			<trans-unit id="location.description">
 				<source>location</source>

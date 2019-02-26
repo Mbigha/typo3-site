@@ -1,0 +1,32 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" 
+	  xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" 
+	  xmlns:t="http://typo3.org/ns/Helhum/TyposcriptRendering/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+	  
+<div class="form">
+	<div id="sendmessage">Your message has been sent. Thank you!</div>
+	<div id="errormessage"></div>
+
+	    <formvh:renderRenderable renderable="{form}">
+	        <formvh:form
+	            object="{form}"
+	            action=""
+	            method="{form.renderingOptions.httpMethod}"
+	            id="{form.identifier}"
+	            class="contactForm"
+	            section="{form.identifier}"
+	            enctype="{form.renderingOptions.httpEnctype}"
+	            addQueryString="{form.renderingOptions.addQueryString}"
+	            argumentsToBeExcludedFromQueryString="{form.renderingOptions.argumentsToBeExcludedFromQueryString}"
+	            additionalParams="{form.renderingOptions.additionalParams}"
+	            additionalAttributes="{data-ajaxuri: '{f:uri.action(controller:\'SendMail\', action: \'send\', pageType: \'999\',
+	            	extensionName: \'hof_bootcamp\', pluginName: \'sendmailbyajax\')}'}"
+	        >
+	            <f:render partial="{form.currentPage.templateName}" arguments="{page: form.currentPage}" />
+	            
+	            <f:render partial="Navigation" arguments="{form: form}" />
+
+	        </formvh:form>
+	    </formvh:renderRenderable>
+	</div>
+</html>

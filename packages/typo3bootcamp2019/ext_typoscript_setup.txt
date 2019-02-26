@@ -1,0 +1,8 @@
+
+plugin.tx_form.settings.yamlConfigurations {
+    100 = EXT:typo3bootcamp2019/Configuration/Form/CustomContactFormSetup.yaml
+}
+ 
+module.tx_form.settings.yamlConfigurations {
+    100 = EXT:typo3bootcamp2019/Configuration/Form/CustomContactFormSetup.yaml
+}

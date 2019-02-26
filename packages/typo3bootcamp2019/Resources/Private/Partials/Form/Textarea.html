@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+<formvh:renderRenderable renderable="{element}">
+	<div class="form-group">
+		<f:form.textarea
+			name="{element.label}"
+			id="{element.label}"
+			rows="5"
+			class="{element.properties.elementClassAttribute} form-control"
+			additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}"
+		/>
+	    <f:render partial="Validation"></f:render>
+    </div>
+</formvh:renderRenderable>
+</html>
