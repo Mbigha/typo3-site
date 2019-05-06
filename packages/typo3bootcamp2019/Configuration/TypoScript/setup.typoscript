@@ -3,6 +3,8 @@
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
 
+#### FRONT END DASHBOARD ####
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:typo3bootcamp2019/Configuration/TypoScript/FrontEndDashboard/setup.typoscript">
 
 ##############
 #### PAGE ####
@@ -45,20 +47,20 @@ page {
     }
 
     includeJSFooterlibs {
-		jquery = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/jquery/jquery.min.js
-		jquerymigrate = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/jquery/jquery-migrate.min.js
-		bootstrap = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/bootstrap/js/bootstrap.bundle.min.js
-		easing = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/easing/easing.min.js
-		superfishintent = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/superfish/hoverIntent.js
-		superfish = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/superfish/superfish.min.js
-		wow = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/wow/wow.min.js
-		venobox = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/venobox/venobox.min.js
-		owlcarousel = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/owlcarousel/owl.carousel.min.js
-		contactform = EXT:typo3bootcamp2019/Resources/Public/TheEvent/contactform/contactform.js
+      jquery = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/jquery/jquery.min.js
+      jquerymigrate = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/jquery/jquery-migrate.min.js
+      bootstrap = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/bootstrap/js/bootstrap.bundle.min.js
+      easing = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/easing/easing.min.js
+      superfishintent = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/superfish/hoverIntent.js
+      superfish = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/superfish/superfish.min.js
+      wow = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/wow/wow.min.js
+      venobox = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/venobox/venobox.min.js
+      owlcarousel = EXT:typo3bootcamp2019/Resources/Public/TheEvent/lib/owlcarousel/owl.carousel.min.js
+      contactform = EXT:typo3bootcamp2019/Resources/Public/TheEvent/contactform/contactform.js
     }
 
     includeJSFooter {
-        typo3bootcamp2019_scripts = EXT:typo3bootcamp2019/Resources/Public/JavaScript/Dist/scripts.js
+        #typo3bootcamp2019_scripts = EXT:typo3bootcamp2019/Resources/Public/JavaScript/Dist/scripts.js
         templatejs = EXT:typo3bootcamp2019/Resources/Public/JavaScript/js/main.js
     }
 }
@@ -78,4 +80,22 @@ ajaxCall {
     }
     10 = COA 
     10 < tt_content.list.20.hofbootcamp_sendmailbyajax 
+}
+
+plugin.tx_sfregister.view {
+  templateRootPaths {
+    0 = EXT:sf_register/Resources/Private/Templates/
+    1 = EXT:typo3bootcamp2019/Resources/Private/Templates/sf_register/
+  }
+
+  partialRootPaths {
+    0 = EXT:sf_register/Resources/Private/Partials/
+    1 = EXT:typo3bootcamp2019/Resources/Private/Templates/sf_register/Partials/
+  }
+}
+
+plugin.tx_hofbootcamp {
+  persistence {
+    storagePid = 19
+  }
 }

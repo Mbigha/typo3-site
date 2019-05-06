@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-03-14T11:05:18Z" product-name="hof_bootcamp">
+		<header/>
+		<body>
+			<trans-unit id="room.description">
+				<source>room</source>
+			</trans-unit>
+			<trans-unit id="max_participants.description">
+				<source>maxParticipants</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

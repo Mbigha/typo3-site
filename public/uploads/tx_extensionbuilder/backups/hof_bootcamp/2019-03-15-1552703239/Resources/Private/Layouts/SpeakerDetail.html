@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+    <a class="sr-only sr-only-focusable" href="#page-content">
+        <span>{f:translate(key: 'skiptomaincontent', extensionName: 'bootstrap_package')}</span>
+    </a>
+    <f:render partial="Navigation/Main" arguments="{_all}" />
+    
+      <!-- Page Content Start -->
+      <main id="main" class="main-page">
+      	<f:render section="Main" />
+      </main>
+      <!-- Page Content End -->
+
+    <footer id="footer"">
+    	<f:render partial="Footer/FooterTop" arguments="{menu: mainnavigation}" />
+    	<f:render partial="Footer/Copyright" arguments="{_all}" />
+    </footer>
+    <f:render partial="Footer/ScrollTop" arguments="{_all}" />
+
+</f:spaceless>
+</html>

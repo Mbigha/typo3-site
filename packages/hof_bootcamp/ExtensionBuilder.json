@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    683,
-                    31.923080444335938
+                    675,
+                    39.153854370117188
                 ]
             },
             "name": "New Model Object",
@@ -77,8 +77,8 @@
         {
             "config": {
                 "position": [
-                    168,
-                    44.923080444335938
+                    160,
+                    52.153854370117188
                 ]
             },
             "name": "New Model Object",
@@ -140,8 +140,8 @@
         {
             "config": {
                 "position": [
-                    635,
-                    281.92308044433594
+                    715,
+                    258.15385437011719
                 ]
             },
             "name": "New Model Object",
@@ -224,6 +224,17 @@
                             "propertyName": "end",
                             "propertyType": "NativeDateTime",
                             "uid": "1111450868216"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "numberOfRegistrations",
+                            "propertyType": "Integer",
+                            "uid": "993476111118"
                         }
                     ]
                 },
@@ -250,6 +261,17 @@
                             "relationWire": "[wired]",
                             "renderType": "selectMultipleSideBySide",
                             "uid": "431757921973"
+                        },
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "A Session can have many speakers and a speaker can speak in one or many sessions",
+                            "relationName": "participants",
+                            "relationType": "manyToMany",
+                            "relationWire": "[wired]",
+                            "renderType": "selectMultipleSideBySide",
+                            "uid": "22347207753"
                         }
                     ]
                 }
@@ -258,8 +280,8 @@
         {
             "config": {
                 "position": [
-                    270,
-                    516.92308044433594
+                    114,
+                    495.15385437011719
                 ]
             },
             "name": "New Model Object",
@@ -386,8 +408,8 @@
         {
             "config": {
                 "position": [
-                    46,
-                    268.92308044433594
+                    39,
+                    276.15385437011719
                 ]
             },
             "name": "New Model Object",
@@ -439,6 +461,47 @@
                             "uid": "1316396776256"
                         }
                     ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    447,
+                    476.15385437011719
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": false,
+                    "customActions": [
+                        "registeredSessions"
+                    ]
+                },
+                "name": "Participant",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "\\TYPO3\\CMS\\Extbase\\Domain\\Model\\FrontendUser",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "500221761946"
+                },
+                "propertyGroup": {
+                    "properties": []
                 },
                 "relationGroup": {
                     "relations": []
@@ -496,6 +559,36 @@
                 "description": "Displays the event schedule on the site's frontend",
                 "key": "schedulelist",
                 "name": "The Event Schedule List"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "Session => registration, register",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "description": "Displays list of sessions for the Frontend Admin",
+                "key": "displaysessions",
+                "name": "Display Sessions"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "Participant => new, create, edit, update",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "description": "Displays form to create new student",
+                "key": "createparticipant",
+                "name": "Create Participant"
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "Participant => registeredSessions, cancelRegistration",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "description": "Displays displays the sessions the Participant has registered for.",
+                "key": "displayregisteredsessions",
+                "name": "Display Registered Sessions"
             }
         ],
         "vendorName": "HofBootCamp"
@@ -548,10 +641,22 @@
                 "terminal": "SOURCES",
                 "uid": "1206800547261"
             }
+        },
+        {
+            "src": {
+                "moduleId": 2,
+                "terminal": "relationWire_2",
+                "uid": "22347207753"
+            },
+            "tgt": {
+                "moduleId": 5,
+                "terminal": "SOURCES",
+                "uid": "500221761946"
+            }
         }
     ],
     "log": {
-        "last_modified": "2019-02-15 02:55",
+        "last_modified": "2019-03-17 08:56",
         "extension_builder_version": "9.10.0",
         "be_user": " (1)"
     }

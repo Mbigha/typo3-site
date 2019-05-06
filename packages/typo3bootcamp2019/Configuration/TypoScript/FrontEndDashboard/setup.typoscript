@@ -1,0 +1,57 @@
+page {
+    includeCSSLibs >
+    includeCSS >
+    includeJSFooterlibs >
+    includeJSFooter >
+
+	bodyTagAdd = class="animsition"
+  
+    includeCSSLibs {
+
+        #### CoolAdmin CSS FILES ####
+        fontFace = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/css/font-face.css
+        fontawesome4 = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/font-awesome-4.7/css/font-awesome.min.css
+        fontawesome5 = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/font-awesome-5/css/fontawesome-all.min.css
+        mdiFont = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/mdi-font/css/material-design-iconic-font.min.css
+        bootstrap4 = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/bootstrap-4.1/bootstrap.min.css
+        animsition = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/animsition/animsition.min.css
+        #wow = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/wow/animate.css
+        cssHamburgers = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/css-hamburgers/hamburgers.min.css
+    }
+    
+    includeCSS {
+        coolAdminStyle = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/css/theme.css
+        customStyle = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/css/custom.css
+    }
+
+    includeJSFooterlibs {
+      jquery3 = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/jquery-3.2.1.min.js
+      bootstrapPopper = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/bootstrap-4.1/popper.min.js
+      bootstrap4 = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/bootstrap-4.1/bootstrap.min.js
+      wow = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/wow/wow.min.js
+      animsition = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/animsition/animsition.min.js
+      counterWaypoints = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/counter-up/jquery.waypoints.min.js
+      counterUp = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/vendor/counter-up/jquery.counterup.min.js
+      ddtf = EXT:typo3bootcamp2019/Resources/Public/JavaScript/js/ddtf.js
+    }
+
+    includeJSFooter {
+        templatejs = EXT:typo3bootcamp2019/Resources/Public/CoolAdmin/js/main.js
+      	customJs = EXT:typo3bootcamp2019/Resources/Public/JavaScript/Dist/scripts.js
+    }
+
+    10.variables {
+        feUserFirstName = TEXT
+        feUserFirstName.data = TSFE:fe_user|user|first_name
+
+        feUserLastName = TEXT
+        feUserLastName.data = TSFE:fe_user|user|last_name
+
+        feEmail = TEXT
+        feEmail.data =  TSFE:fe_user|user|email
+    }
+
+    [loginUser = ]
+        page.config >
+        page.config.additionalHeaders = Location: http://www.yourdomain.org/login.html
+}

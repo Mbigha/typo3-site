@@ -1,0 +1,46 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:layout name="Default" />
+
+    <f:section name="content">
+        
+            <div class="container-fluid">
+                    <div class="row m-t-30">
+                        <div class="col-md-12">
+                            <h3 class="title-3 m-b-30"> Registered Sessions </h3>
+                            <f:flashMessages />
+
+                            <!-- DATA TABLE-->
+                            <div class="table-responsive m-b-40">
+                                <table class="table table-borderless table-data3">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Day</th>
+                                            <th>Time</th>
+                                            <th>Location</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <f:for each="{sessions}" as="session">
+                                            <tr>
+                                                <td>{session.title}</td>
+                                                <td>{session.timeslot.day.date->f:format.date(format: 'd/m/Y')}</td>
+                                                <td>{session.timeslot.timeRange}</td>
+                                                <td>{session.location.room}</td>
+                                                <td>
+                                                    <a class="btn btn-info session-register-button" href="#" data-href="{f:uri.action(action: 'cancelRegistration', arguments:"{session: session}")}" 
+                                                        data-toggle="modal" data-target="#cancel-modal">Cancel
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </f:for>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- END DATA TABLE-->
+                        </div>
+                    </div>
+                </div>
+    </f:section>
+</html>

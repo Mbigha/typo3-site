@@ -1,0 +1,21 @@
+
+config.tx_extbase {
+  persistence {
+    classes {
+
+      TYPO3\CMS\Extbase\Domain\Model\FrontendUser {
+        subclasses {
+          Tx_HofBootcamp_Student = HofBootCamp\HofBootcamp\Domain\Model\Student
+          
+        }
+      }
+      HofBootCamp\HofBootcamp\Domain\Model\Student {
+        mapping {
+          tableName = fe_users
+          recordType = Tx_HofBootcamp_Student
+        }
+      }
+
+    }
+  }
+}

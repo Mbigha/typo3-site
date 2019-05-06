@@ -1,0 +1,19 @@
+/* Custom style for the FrontEnd Admin backend */
+
+.typo3-messages {
+    list-style: none;
+}
+
+.account-dropdown__footer button {
+	display: block;
+    color: #333;
+    padding: 15px 25px;
+    font-size: 14px;
+}
+
+.account-dropdown__footer button i {
+	line-height: 1;
+    margin-right: 20px;
+    font-size: 18px;
+    vertical-align: middle;
+}

@@ -25,7 +25,9 @@
         "typo3/cms-viewpage": "^9.5",
         "symfony/dotenv": "^4.2",
         "friendsoftypo3/extension-builder": "^9.10",
-        "hofbootcamp/hof-bootcamp": "^1.0"
+        "hofbootcamp/hof-bootcamp": "^1.0",
+        "evoweb/sf-register": "^9.0",
+        "typo3/cms-felogin": "^9.5"
     },
     "extra": {
 		"patches": {

@@ -1,0 +1,69 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+	<f:form action="preview" name="user" id="sfrForm" object="{user}" enctype="multipart/form-data">
+		<f:render partial="FormErrors" arguments="{for: 'user'}" />
+		<f:render partial="FieldError" arguments="{field: 'uid'}" />
+
+		<f:for each="{settings.fields.selected}" as="selectedField" iteration="iteration">
+			<f:alias map="{options: '{settings.fields.configuration.{selectedField}}'}">
+				<f:render partial="Form/{options.partial}"
+					arguments="{user: user, fieldName: selectedField, options: options, settings: settings, iteration: iteration}"/>
+			</f:alias>
+		</f:for>
+	</f:form>
+
+	<div class="mandatory">
+		<f:format.raw><f:translate key="info_mandatory_fields"/></f:format.raw>
+	</div>
+
+	<!--==========================
+		Registration Form
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+
+		<div class="container">
+  
+		  <div class="form">
+			<!-- <div id="sendmessage">Your message has been sent. Thank you!</div>
+			<div id="errormessage"></div> -->
+			<f:form action="preview" name="user" class="contactForm" object="{user}" enctype="multipart/form-data">
+
+				<f:for each="{settings.fields.selected}" as="selectedField" iteration="iteration">
+					<f:alias map="{options: '{settings.fields.configuration.{selectedField}}'}">
+						<f:render partial="Form/{options.partial}"
+							arguments="{user: user, fieldName: selectedField, options: options, settings: settings, iteration: iteration}"/>
+					</f:alias>
+				</f:for>
+			</f:form>
+
+			<form action="" method="post" role="form" class="contactForm">
+			  <div class="form-row">
+				<div class="form-group col-md-6">
+				  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+				  <div class="validation"></div>
+				</div>
+				<div class="form-group col-md-6">
+				  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+				  <div class="validation"></div>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+				<div class="validation"></div>
+			  </div>
+			  <div class="form-group">
+				<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+				<div class="validation"></div>
+			  </div>
+			  <div class="text-center"><button type="submit">Send Message</button></div>
+			</form>
+		  </div>
+  
+		</div>
+	  </section><!-- #contact -->
+</f:section>
+
+</html>

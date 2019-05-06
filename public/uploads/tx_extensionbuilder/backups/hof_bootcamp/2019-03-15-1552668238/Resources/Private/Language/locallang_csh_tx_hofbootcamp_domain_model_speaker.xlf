@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-03-15T10:43:04Z" product-name="hof_bootcamp">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="first_name.description">
+				<source>firstName</source>
+			</trans-unit>
+			<trans-unit id="last_name.description">
+				<source>lastName</source>
+			</trans-unit>
+			<trans-unit id="organisation.description">
+				<source>organisation</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="url.description">
+				<source>url</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

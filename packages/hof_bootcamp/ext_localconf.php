@@ -17,7 +17,8 @@ call_user_func(
                 'TimeSlot' => '',
                 'Session' => '',
                 'Speaker' => '',
-                'Location' => ''
+                'Location' => '',
+                'Participant' => 'create, update, '
             ]
         );
 
@@ -33,7 +34,8 @@ call_user_func(
                 'TimeSlot' => '',
                 'Session' => '',
                 'Speaker' => '',
-                'Location' => ''
+                'Location' => '',
+                'Participant' => 'create, update, '
             ]
         );
 
@@ -49,15 +51,59 @@ call_user_func(
                 'TimeSlot' => '',
                 'Session' => '',
                 'Speaker' => '',
-                'Location' => ''
+                'Location' => '',
+                'Participant' => 'create, update, '
             ]
         );
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
             'HofBootCamp.HofBootcamp',
-            'SendMailByAjax',
+            'Displaysessions',
             [
-                'SendMail' => 'send',
+                'Session' => 'registration, register'
+            ],
+            // non-cacheable actions
+            [
+                'Day' => '',
+                'TimeSlot' => '',
+                'Session' => '',
+                'Speaker' => '',
+                'Location' => '',
+                'Participant' => 'create, update, '
+            ]
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'HofBootCamp.HofBootcamp',
+            'Createparticipant',
+            [
+                'Participant' => 'new, create, edit, update'
+            ],
+            // non-cacheable actions
+            [
+                'Day' => '',
+                'TimeSlot' => '',
+                'Session' => '',
+                'Speaker' => '',
+                'Location' => '',
+                'Participant' => 'create, update, '
+            ]
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'HofBootCamp.HofBootcamp',
+            'Displayregisteredsessions',
+            [
+                'Participant' => 'registeredSessions, cancelRegistration'
+            ],
+            // non-cacheable actions
+            [
+                'Day' => '',
+                'TimeSlot' => '',
+                'Session' => '',
+                'Speaker' => '',
+                'Location' => '',
+                'Participant' => 'create, update, '
             ]
         );
 
@@ -93,6 +139,33 @@ call_user_func(
                             list_type = hofbootcamp_schedulelist
                         }
                     }
+                    displaysessions {
+                        iconIdentifier = hof_bootcamp-plugin-displaysessions
+                        title = LLL:EXT:hof_bootcamp/Resources/Private/Language/locallang_db.xlf:tx_hof_bootcamp_displaysessions.name
+                        description = LLL:EXT:hof_bootcamp/Resources/Private/Language/locallang_db.xlf:tx_hof_bootcamp_displaysessions.description
+                        tt_content_defValues {
+                            CType = list
+                            list_type = hofbootcamp_displaysessions
+                        }
+                    }
+                    createparticipant {
+                        iconIdentifier = hof_bootcamp-plugin-createparticipant
+                        title = LLL:EXT:hof_bootcamp/Resources/Private/Language/locallang_db.xlf:tx_hof_bootcamp_createparticipant.name
+                        description = LLL:EXT:hof_bootcamp/Resources/Private/Language/locallang_db.xlf:tx_hof_bootcamp_createparticipant.description
+                        tt_content_defValues {
+                            CType = list
+                            list_type = hofbootcamp_createparticipant
+                        }
+                    }
+                    displayregisteredsessions {
+                        iconIdentifier = hof_bootcamp-plugin-displayregisteredsessions
+                        title = LLL:EXT:hof_bootcamp/Resources/Private/Language/locallang_db.xlf:tx_hof_bootcamp_displayregisteredsessions.name
+                        description = LLL:EXT:hof_bootcamp/Resources/Private/Language/locallang_db.xlf:tx_hof_bootcamp_displayregisteredsessions.description
+                        tt_content_defValues {
+                            CType = list
+                            list_type = hofbootcamp_displayregisteredsessions
+                        }
+                    }
                 }
                 show = *
             }
@@ -116,6 +189,24 @@ call_user_func(
 				'hof_bootcamp-plugin-schedulelist',
 				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
 				['source' => 'EXT:hof_bootcamp/Resources/Public/Icons/user_plugin_schedulelist.svg']
+			);
+		
+			$iconRegistry->registerIcon(
+				'hof_bootcamp-plugin-displaysessions',
+				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+				['source' => 'EXT:hof_bootcamp/Resources/Public/Icons/user_plugin_displaysessions.svg']
+			);
+		
+			$iconRegistry->registerIcon(
+				'hof_bootcamp-plugin-createparticipant',
+				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+				['source' => 'EXT:hof_bootcamp/Resources/Public/Icons/user_plugin_createparticipant.svg']
+			);
+		
+			$iconRegistry->registerIcon(
+				'hof_bootcamp-plugin-displayregisteredsessions',
+				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+				['source' => 'EXT:hof_bootcamp/Resources/Public/Icons/user_plugin_displayregisteredsessions.svg']
 			);
 		
     }

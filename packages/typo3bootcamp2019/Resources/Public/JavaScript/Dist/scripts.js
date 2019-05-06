@@ -4,3 +4,10 @@
  * Licensed under the GPL-2.0-or-later license
  */
 console.log("WE LOVE TYPO3");
+
+// Modal Confirmation handling
+$('.confirmation-modal').on('shown.bs.modal', function(e) {
+    $(this).find('.confirm').attr('href', $(e.relatedTarget).data('href'));
+});
+
+$('table').ddTableFilter();

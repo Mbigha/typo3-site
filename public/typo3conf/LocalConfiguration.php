@@ -3,7 +3,7 @@ return [
     'BE' => [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => getenv('TYPO3_INSTALL_TOOL_PASSWORD'),
+        'installToolPassword' => '=19=16384,t=16,p=2+Ybd5pCc0/9GdvaBj+bnXHbtF/+aI5M',
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -22,8 +22,9 @@ return [
         'extConf' => [
             'backend' => 'a:6:{s:14:"backendFavicon";s:0:"";s:11:"backendLogo";s:70:"EXT:bootstrap_package/Resources/Public/Images/Backend/backend-logo.svg";s:20:"loginBackgroundImage";s:80:"EXT:bootstrap_package/Resources/Public/Images/Backend/login-background-image.jpg";s:13:"loginFootnote";s:0:"";s:19:"loginHighlightColor";s:0:"";s:9:"loginLogo";s:68:"EXT:bootstrap_package/Resources/Public/Images/Backend/login-logo.svg";}',
             'bootstrap_package' => 'a:8:{s:20:"disableCssProcessing";s:1:"0";s:17:"disableFontLoader";s:1:"0";s:24:"disableGoogleFontCaching";s:1:"0";s:27:"disablePageTsBackendLayouts";s:1:"0";s:28:"disablePageTsContentElements";s:1:"0";s:16:"disablePageTsRTE";s:1:"0";s:20:"disablePageTsTCEFORM";s:1:"0";s:20:"disablePageTsTCEMAIN";s:1:"0";}',
-            'extension_builder' => 'a:3:{s:15:"enableRoundtrip";s:1:"1";s:15:"backupExtension";s:1:"1";s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";}',
+            'extension_builder' => 'a:3:{s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";s:15:"backupExtension";s:1:"1";s:15:"enableRoundtrip";s:1:"1";}',
             'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
+            'sf_register' => 'a:1:{s:20:"typoscriptComplexity";s:7:"minimal";}',
         ],
     ],
     'EXTENSIONS' => [
@@ -54,6 +55,9 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'sf_register' => [
+            'typoscriptComplexity' => 'minimal',
+        ],
     ],
     'FE' => [
         'debug' => true,
@@ -64,13 +68,13 @@ return [
         ],
     ],
     'GFX' => [
-        'processor' => getenv('TYPO3_GFX_PROCESSOR'),
+        'processor' => 'ImageMagick',
         'processor_allowTemporaryMasksAsPng' => false,
         'processor_colorspace' => 'sRGB',
         'processor_effects' => true,
         'processor_enabled' => true,
-        'processor_path' => getenv('TYPO3_GFX_PROCESSOR_PATH'),
-        'processor_path_lzw' => getenv('TYPO3_GFX_PROCESSOR_PATH_LZW'),
+        'processor_path' => '/usr/bin/',
+        'processor_path_lzw' => '/usr/bin/',
     ],
     'MAIL' => [
         'transport' => 'sendmail',
@@ -83,12 +87,12 @@ return [
     'SYS' => [
         'devIPmask' => '*',
         'displayErrors' => 1,
-        'encryptionKey' => getenv('TYPO3_ENCRYPTION_KEY'),
+        'encryptionKey' => '2ae6d72f9e1e0ef58a2670e6ac51be71bbcc023a0fcb5e69304ca0e5b0e99e50dbecd2a89039b53ca823c264d629b42d',
         'exceptionalErrors' => 12290,
         'features' => [
             'unifiedPageTranslationHandling' => true,
         ],
-        'sitename' => getenv('SITE_NAME'),
+        'sitename' => 'Typo3 Hof BootCamp',
         'systemLogLevel' => 0,
         'systemMaintainers' => [
             1,

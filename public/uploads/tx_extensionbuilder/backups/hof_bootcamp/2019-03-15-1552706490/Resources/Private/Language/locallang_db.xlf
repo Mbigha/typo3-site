@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-03-15T20:50:43Z" product-name="hof_bootcamp">
+		<header/>
+		<body>
+			<trans-unit id="tx_hofbootcamp_domain_model_day">
+				<source>Day</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_day.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_day.day_number">
+				<source>Day Number</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_day.times_slots">
+				<source>Times Slots</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_timeslot">
+				<source>Time Slot</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_timeslot.time_range">
+				<source>Time Range</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_timeslot.sessions">
+				<source>Sessions</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session">
+				<source>Session</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session.max_participants">
+				<source>Max Participants</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session.start">
+				<source>Start</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session.end">
+				<source>End</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session.speakers">
+				<source>Speakers</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_speaker">
+				<source>Speaker</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_speaker.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_speaker.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_speaker.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_speaker.organisation">
+				<source>Organisation</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_speaker.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_speaker.url">
+				<source>Url</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_speaker.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_speaker.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_location.room">
+				<source>Room</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_location.max_participants">
+				<source>Max Participants</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_student">
+				<source>Student</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_student.username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_student.password">
+				<source>Password</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_student.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_student.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_student.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_participant">
+				<source>Participant</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_participant.username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_participant.password">
+				<source>Password</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_participant.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_participant.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_participant.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_speakerslist.name">
+				<source>The Speakers List</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_speakerslist.description">
+				<source>Displays a list of all the speakers created in the Typo3 backend</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_sessiondetail.name">
+				<source>Session Detail</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_sessiondetail.description">
+				<source>Displays the details of a session</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_schedulelist.name">
+				<source>The Event Schedule List</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_schedulelist.description">
+				<source>Displays the event schedule on the site&#039;s frontend</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_displaysessions.name">
+				<source>Display Sessions</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_displaysessions.description">
+				<source>Displays list of sessions for the Frontend Admin</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_createstudent.name">
+				<source>Create Student</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_createstudent.description">
+				<source>Displays form to create new student</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_createparticipant.name">
+				<source>Create Participant</source>
+			</trans-unit>
+			<trans-unit id="tx_hof_bootcamp_createparticipant.description">
+				<source>Displays form to create new student</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

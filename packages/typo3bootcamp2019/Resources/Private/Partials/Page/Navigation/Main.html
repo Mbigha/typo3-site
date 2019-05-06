@@ -1,6 +1,8 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<header id="header" class="{f:if(condition: '{data.uid} == 17 || {data.uid} == 18', then: 'header-fixed', else: '')}">
+<header id="header" 
+  class="{f:if(condition: '{data.uid} == 17 || {data.uid} == 18 || {data.uid} == 24 || {data.uid} == 25', 
+      then: 'header-fixed', else: '')}">
     <div class="container">
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
@@ -22,8 +24,11 @@
     	 	<f:for each="{menu}" as="item">
           		<li class="{f:if(condition: '{item.data.uid == 6)}', then: 'menu-active', else: '')}"><a href="/#{item.data.subtitle}">{item.title}</a></li>
           		<!-- <li class="buy-tickets"><a href="#buy-tickets">Buy Tickets</a></li> -->
-          	</f:for>
-        </ul>
+        </f:for>
+        <li class="buy-tickets">
+          <f:link.page pageUid="25">Login</f:link.page>
+        </li>
+      </ul>
     </f:if>
 </f:section>
 </html>

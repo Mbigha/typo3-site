@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31b1227a70e59ddc4e3865e19d866fbb",
+    "content-hash": "af79b5d917b08903248bfecd5d821332",
     "packages": [
         {
             "name": "bk2k/bootstrap-package",
@@ -951,6 +951,57 @@
             "time": "2018-06-14T14:45:07+00:00"
         },
         {
+            "name": "evoweb/sf-register",
+            "version": "9.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/evoWeb/sf_register.git",
+                "reference": "6f33432c9d835c92e4cb2d46fcfb3d01f1ef9c7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/evoWeb/sf_register/zipball/6f33432c9d835c92e4cb2d46fcfb3d01f1ef9c7a",
+                "reference": "6f33432c9d835c92e4cb2d46fcfb3d01f1ef9c7a",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^9.5"
+            },
+            "require-dev": {
+                "typo3/cms-fluid-styled-content": "*",
+                "typo3/testing-framework": "*"
+            },
+            "suggest": {
+                "evoweb/recaptcha": "^9.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Evoweb\\SfRegister\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Frontend User Registration: Offers the possibility to maintain the fe_user data in frontend.",
+            "homepage": "https://github.com/evoWeb/sf_register/",
+            "keywords": [
+                "Double-optin",
+                "Edit user data",
+                "TYPO3 CMS",
+                "frontend",
+                "user registration"
+            ],
+            "time": "2019-01-30T19:53:10+00:00"
+        },
+        {
             "name": "friendsoftypo3/extension-builder",
             "version": "9.10.1",
             "source": {
@@ -1257,12 +1308,12 @@
             "version": "v1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phlylabs/idna-convert.git",
+                "url": "https://github.com/algo26-matthias/idna-convert.git",
                 "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phlylabs/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
+                "url": "https://api.github.com/repos/algo26-matthias/idna-convert/zipball/a6dfb6f87611e3a89d2eec4924a0f51db755c573",
                 "reference": "a6dfb6f87611e3a89d2eec4924a0f51db755c573",
                 "shasum": ""
             },
@@ -1299,6 +1350,7 @@
                 "idna",
                 "php"
             ],
+            "abandoned": "algo26-matthias/idna-convert",
             "time": "2016-06-19T18:08:43+00:00"
         },
         {
@@ -3136,6 +3188,61 @@
                 }
             ],
             "description": "TYPO3 Extension Manager",
+            "homepage": "https://typo3.org",
+            "time": "2018-12-14T07:28:48+00:00"
+        },
+        {
+            "name": "typo3/cms-felogin",
+            "version": "v9.5.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/felogin.git",
+                "reference": "b2b62da2842101d431f006d383534bb9422383d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/felogin/zipball/b2b62da2842101d431f006d383534bb9422383d2",
+                "reference": "b2b62da2842101d431f006d383534bb9422383d2",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.3"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "replace": {
+                "felogin": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.5.x-dev"
+                },
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "felogin"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Felogin\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A template-based plugin to log in Website Users in the Frontend",
             "homepage": "https://typo3.org",
             "time": "2018-12-14T07:28:48+00:00"
         },

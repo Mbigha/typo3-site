@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-03-16T09:20:16Z" product-name="hof_bootcamp">
+		<header/>
+		<body>
+			<trans-unit id="date.description">
+				<source>date</source>
+			</trans-unit>
+			<trans-unit id="day_number.description">
+				<source>dayNumber</source>
+			</trans-unit>
+			<trans-unit id="times_slots.description">
+				<source>A Day can have many time slots, but a time slot can be assigned to a day.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

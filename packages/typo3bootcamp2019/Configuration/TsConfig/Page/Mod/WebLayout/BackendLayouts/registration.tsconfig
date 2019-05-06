@@ -1,0 +1,22 @@
+mod.web_layout.BackendLayouts {
+  registration {
+    title = FrontEnd Admin Registration
+    icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Normal
+                colPos = 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

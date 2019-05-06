@@ -44,11 +44,17 @@ return [
         'extensionmanager' => [
             'packagePath' => 'typo3/sysext/extensionmanager/',
         ],
+        'felogin' => [
+            'packagePath' => 'typo3/sysext/felogin/',
+        ],
         'filelist' => [
             'packagePath' => 'typo3/sysext/filelist/',
         ],
         'form' => [
             'packagePath' => 'typo3/sysext/form/',
+        ],
+        'recycler' => [
+            'packagePath' => 'typo3/sysext/recycler/',
         ],
         'redirects' => [
             'packagePath' => 'typo3/sysext/redirects/',
@@ -76,6 +82,9 @@ return [
         ],
         'hof_bootcamp' => [
             'packagePath' => 'typo3conf/ext/hof_bootcamp/',
+        ],
+        'sf_register' => [
+            'packagePath' => 'typo3conf/ext/sf_register/',
         ],
     ],
     'version' => 5,

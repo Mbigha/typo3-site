@@ -1,0 +1,66 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:layout name="Default" />
+
+  This template displays a NEW form for the current domain object.
+
+  If you modify this template, do not forget to change the overwrite settings
+  in /Configuration/ExtensionBuilder/settings.yaml:
+    Resources:
+      Private:
+        Templates:
+          New.html: keep
+
+  Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+  <f:section name="content">
+
+    <!--==========================
+		Registration Form
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp registration-form" style="padding: 0;">
+
+      <div class="container">
+        <div class="form">
+        <!-- <div id="errormessage"></div> -->
+
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <f:flashMessages />
+
+            <f:form action="create" name="newParticipant" object="{newParticipant}" 
+              enctype="multipart/form-data" arguments="{userGroup: usergroup}">
+              <!-- <div class="form-row"> -->
+                <div class="form-group">
+                  <f:form.textfield class="form-control" placeholder="Username" property="username" />
+                </div>
+                <div class="form-group">
+                  <f:form.password class="form-control" placeholder="Password" property="password" />
+                </div>
+                <div class="form-group">
+                  <f:form.textfield class="form-control" placeholder="First Name" property="firstName" />
+                </div>
+                <div class="form-group">
+                  <f:form.textfield class="form-control" placeholder="Last Name" property="lastName" />
+                </div>
+                <div class="form-group">
+                  <f:form.textfield class="form-control" placeholder="Email" property="email" />
+                </div>
+                
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="text-center submit-button-container">
+                        <button type="submit">Register</button>
+                    </div>
+                </div>
+              <!-- </div> -->
+            </f:form>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        
+        </div>
+    
+      </div>
+      </section><!-- #contact -->
+  </f:section>
+</html>

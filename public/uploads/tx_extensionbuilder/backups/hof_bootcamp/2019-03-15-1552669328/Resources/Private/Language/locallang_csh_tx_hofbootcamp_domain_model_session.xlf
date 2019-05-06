@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-03-15T10:55:34Z" product-name="hof_bootcamp">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="max_participants.description">
+				<source>maxParticipants</source>
+			</trans-unit>
+			<trans-unit id="start.description">
+				<source>start</source>
+			</trans-unit>
+			<trans-unit id="end.description">
+				<source>end</source>
+			</trans-unit>
+			<trans-unit id="location.description">
+				<source>location</source>
+			</trans-unit>
+			<trans-unit id="speakers.description">
+				<source>A Session can have many speakers and a speaker can speak in one or many sessions</source>
+			</trans-unit>
+			<trans-unit id="students.description">
+				<source>students</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -43,3 +43,53 @@
 #footer .footer-top .footer-info img {
 	height: 80px !important;
 }
+
+
+// Style for Submit Form on registration Page
+.tx_evoweb_sfregister #contact {
+	padding: 0;
+}
+
+.tx_evoweb_sfregister form {
+	max-width: initial !important;
+}
+
+#contact .upload.image {
+	margin-bottom: 20px;
+}
+
+#contact .submit-button-container {
+	clear: both;
+}
+
+#contact .form .validation {
+	display: block !important;
+    margin: 0 0 10px !important;
+}
+
+// Style for Login form
+form input[type="submit"] {
+    background: #f82249;
+    border: 0;
+    padding: 10px 40px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+// Style for Registration form
+.registration-form .form-control {
+	height: initial;
+}
+
+.registration-form .typo3-messages {
+	list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.registration-form .typo3-messages .alert-message {
+	margin: 10px auto;
+    font-weight: 600;
+}

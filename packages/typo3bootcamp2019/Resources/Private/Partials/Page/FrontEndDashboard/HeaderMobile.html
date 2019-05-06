@@ -1,0 +1,42 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true"></html>
+
+    <!-- HEADER MOBILE-->
+    <header class="header-mobile d-block d-lg-none">
+        <div class="header-mobile__bar">
+            <div class="container-fluid">
+                <div class="header-mobile-inner">
+                    <f:link.page pageUid="27" class="logo">
+                        <img src="{f:uri.image(src: settings.logo.file)}" alt="{logoAlt}">
+                    </f:link.page>
+                    <button class="hamburger hamburger--slider" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar-mobile">
+            <div class="container-fluid">
+                <ul class="navbar-mobile__list list-unstyled">
+                    <li>
+                        <f:link.page pageUid="27">
+                            <i class="fas fa-tachometer-alt"></i>Dashboard
+                        </f:link.page>
+                    </li>
+                    <li>
+                        <f:link.action action="listRegistered" controller="Session" extensionName="hofbootcamp">
+                            <i class="fas fa-registered"></i>Registered Sessions
+                        </f:link.action>
+                    </li>
+                    <li>
+                        <f:link.action action="registration" controller="Session" extensionName="hofbootcamp">
+                            <i class="fas fa-user-plus"></i>Session Registration
+                        </f:link.action>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER MOBILE-->
+</html>

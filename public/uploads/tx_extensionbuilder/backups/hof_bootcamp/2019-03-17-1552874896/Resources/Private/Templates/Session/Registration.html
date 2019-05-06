@@ -1,0 +1,52 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:layout name="Default" />
+
+    <f:section name="content">
+        
+            <div class="container-fluid">
+                    <div class="row m-t-30">
+                        <div class="col-md-12">
+                            <f:flashMessages />
+
+                            <!-- DATA TABLE-->
+                            <div class="table-responsive m-b-40">
+                                <table class="table table-borderless table-data3">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Day</th>
+                                            <th>Time</th>
+                                            <th>Location</th>
+                                            <th>Available Seats</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <f:for each="{sessions}" as="session">
+                                            <f:variable name="availableSpace">
+                                                {session.maxParticipants - session.numberOfRegistrations}
+                                            </f:variable>
+                                            <tr>
+                                                <td>{session.title}</td>
+                                                <td>{session.timeslot.day.date->f:format.date(format: 'd/m/Y')}</td>
+                                                <td>{session.timeslot.timeRange}</td>
+                                                <td>{session.location.room}</td>
+                                                <td>{availableSpace}</td>
+                                                <td>
+                                                    <f:if condition="{availableSpace} != 0">
+                                                        <a class="btn btn-info session-register-button" href="#" data-href="{f:uri.action(action: 'register', arguments:"{user: user, session: session}")}" 
+                                                            data-toggle="modal" data-target="#smallmodal">Register
+                                                        </a>
+                                                    </f:if>
+                                                </td>
+                                            </tr>
+                                        </f:for>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- END DATA TABLE-->
+                        </div>
+                    </div>
+                </div>
+    </f:section>
+</html>

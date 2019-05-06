@@ -1,0 +1,24 @@
+{
+    "name": "hofbootcamp/hof-bootcamp",
+    "type": "typo3-cms-extension",
+    "description": "The extension to handle contents of the Bootcamp website",
+    "authors": [],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "HofBootCamp\\HofBootcamp\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HofBootCamp\\HofBootcamp\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "hof_bootcamp": "self.version",
+        "typo3-ter/hof-bootcamp": "self.version"
+    }
+}

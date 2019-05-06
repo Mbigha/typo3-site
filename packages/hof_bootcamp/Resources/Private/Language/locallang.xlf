@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-02-15T02:55:53Z" product-name="hof_bootcamp">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-03-17T20:56:25Z" product-name="hof_bootcamp">
 		<header/>
 		<body>
 			<trans-unit id="tx_hofbootcamp_domain_model_day">
@@ -42,11 +42,17 @@
 			<trans-unit id="tx_hofbootcamp_domain_model_session.end">
 				<source>End</source>
 			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session.number_of_registrations">
+				<source>Number Of Registrations</source>
+			</trans-unit>
 			<trans-unit id="tx_hofbootcamp_domain_model_session.location">
 				<source>Location</source>
 			</trans-unit>
 			<trans-unit id="tx_hofbootcamp_domain_model_session.speakers">
 				<source>Speakers</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_session.participants">
+				<source>Participants</source>
 			</trans-unit>
 			<trans-unit id="tx_hofbootcamp_domain_model_speaker">
 				<source>Speaker</source>
@@ -83,6 +89,9 @@
 			</trans-unit>
 			<trans-unit id="tx_hofbootcamp_domain_model_location.max_participants">
 				<source>Max Participants</source>
+			</trans-unit>
+			<trans-unit id="tx_hofbootcamp_domain_model_participant">
+				<source>Participant</source>
 			</trans-unit>
 		</body>
 	</file>
